@@ -1,10 +1,8 @@
-# understanding the greedy max cut algorithm.
+# implementing the greedy max cut algorithm from Rohde, 2002
 import numpy as np
 from scipy import stats, spatial
 import os
-import time
 import matplotlib.pyplot as plt
-import pandas as pd
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 np.random.seed(1)
