@@ -61,7 +61,7 @@ def greedy_max_cut(target_matrix,N,D):
                         a = 2*a_matrix - 1 
                         b = 2*(d[distance_indices_that_matter] - t[distance_indices_that_matter])+1
                         
-                        c0_minus_c1_efficient = a @ b - np.sum(binary_matrix[:,col_k]) # encourages sparsity the more 1s are added
+                        c0_minus_c1_efficient = a @ b
                         if c0_minus_c1_efficient < 0:
                             binary_matrix[i,col_k] = 0
                         else:
